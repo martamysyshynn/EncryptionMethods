@@ -15,7 +15,7 @@ This application provides a simple and user-friendly interface for encrypting an
         - Random key generation.
         - Key import/export from/to files.
         - Interactive grid for key configuration.
-4. Vigenère Cipher
+4. Vigenere Cipher
    - A polyalphabetic substitution cipher using a keyword.
    - Advanced features:
       - Kasiski examination for key length estimation.
@@ -30,28 +30,39 @@ This application provides a simple and user-friendly interface for encrypting an
 
 # File Structure
 
-.
-├── main.py                # Program entry point
-├── src/
-│   └── ciphers.py         # Core cipher algorithms and GUI logic
-├── data/
-│   ├── english_words.txt  # Dictionary for brute-force attacks
-│   ├── english_alphabet.txt
-│   └── ukrainian_alphabet.txt
-├── test/
-│   └── test_main.py       # Unit tests for cipher algorithms
-└── README.md              # Project documentation
+- main.py - program launch
+- src:
+   - ciphers.py - algorithms for implementing ciphers
+- data:
+   - english_words.txt - dictionary
+   - english_alphabet.txt
+   - ukrainian_alphabet.txt
+- test:
+   - test_main.py - unit tests for the program
+- README.md – project documentation
 
-Additional Notes
+# Installation and Usage
+   # Prerequisites
+      - Python 3.x
+      - Tkinter 
+      - Libraries: tracemalloc, collections, random, math, functools, string, numpy, unittest, os
+
+   # Steps to Run
+
+      1. Clone the repository or download the source files.
+      2. Install required libraries (if not already installed).
+      3. Run the application.
+
+# Additional Notes
 
 - Performance Metrics
-   The application measures time taken and memory usage for each operation, displayed in the GUI.
+   - The application measures time taken and memory usage for each operation, displayed in the GUI.
 - Key Management
-   Cardano and Affine Ciphers: Keys can be exported/imported for reuse.
-   Dictionary Attacks: For Vigenère, a dictionary file (english_words.txt) is required for brute-force attacks.
+   - Cardano and Affine Ciphers: Keys can be exported/imported for reuse.
+   - Dictionary Attacks: For Vigenere, a dictionary file (english_words.txt) is required for brute-force attacks.
 - Limitations
-   Non-alphabetic characters (e.g., numbers, symbols) may not be processed by some ciphers.
-   Large files may impact performance due to memory constraints.
+   - Non-alphabetic characters (e.g., numbers, symbols) may not be processed by some ciphers.
+   - Large files may impact performance due to memory constraints.
 
 # License
 
