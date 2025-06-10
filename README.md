@@ -2,38 +2,56 @@
 This application provides a simple and user-friendly interface for encrypting and decrypting text using multiple encryption algorithms. It is ideal for learning, testing, or applying basic cryptographic methods. This program was created while studying the course “Fundamentals of Cryptography” at the Ivan Franko National University of Lviv.
 
 # Supported Ciphers
+
 1. Rail Fence Cipher
    - A transposition cipher that writes plaintext in a zigzag pattern across multiple "rails".
-2. Caesar (Shift) Cipher with Frequency Analysis
+   - Supports customizable rail height and block processing.
+2. Caesar (Shift) Cipher
    - Classic substitution cipher with support for frequency-based cryptanalysis to recover unknown keys.
+   - Supports custom alphabets and block-wise encryption/decryption.
 3. Cardano Grille Cipher
    - A grid-based transposition cipher that uses a rotating key matrix.
-   - Supports random key generation.
-   - Allows key import/export from/to files.
+   - Features:
+        - Random key generation.
+        - Key import/export from/to files.
+        - Interactive grid for key configuration.
 4. Vigenère Cipher
    - A polyalphabetic substitution cipher using a keyword.
-   - Implements Kasiski examination for key length estimation.
-   - Supports brute-force key cracking using a dictionary (english_words.txt).
+   - Advanced features:
+      - Kasiski examination for key length estimation.
+      - Brute-force key cracking using a dictionary (e.g., english_words.txt).
 5. Higher-Order Affine Cipher
-   - An extended version of the affine cipher allowing more complex substitutions.
-   - Supports key generation.
-   - Allows key import/export from/to files.
-
+   - An extended version of the affine cipher allowing complex matrix-based substitutions.
+   - Features:
+      - Random key generation.
+      - Key import/export from/to files.
+      - Support for block-wise processing.
 
 
 # File Structure
 
-- main.py - program launch
-- src:
-   - ciphers.py - algorithms for implementing ciphers
-- data:
-   - english_words.txt - dictionary
-   - english_alphabet.txt
-   - ukrainian_alphabet.txt
-- test:
-   - test_main.py - unit tests for the program
-- README.md – зroject documentation
+.
+├── main.py                # Program entry point
+├── src/
+│   └── ciphers.py         # Core cipher algorithms and GUI logic
+├── data/
+│   ├── english_words.txt  # Dictionary for brute-force attacks
+│   ├── english_alphabet.txt
+│   └── ukrainian_alphabet.txt
+├── test/
+│   └── test_main.py       # Unit tests for cipher algorithms
+└── README.md              # Project documentation
 
+Additional Notes
+
+- Performance Metrics
+   The application measures time taken and memory usage for each operation, displayed in the GUI.
+- Key Management
+   Cardano and Affine Ciphers: Keys can be exported/imported for reuse.
+   Dictionary Attacks: For Vigenère, a dictionary file (english_words.txt) is required for brute-force attacks.
+- Limitations
+   Non-alphabetic characters (e.g., numbers, symbols) may not be processed by some ciphers.
+   Large files may impact performance due to memory constraints.
 
 # License
 
