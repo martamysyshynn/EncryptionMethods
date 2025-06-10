@@ -1,7 +1,7 @@
 # EncryptionMethods
 This application provides a simple and user-friendly interface for encrypting and decrypting text using multiple encryption algorithms. It is ideal for learning, testing, or applying basic cryptographic methods. This program was created while studying the course “Fundamentals of Cryptography” at the Ivan Franko National University of Lviv.
 
-#Supported Ciphers
+# Supported Ciphers
 1. Rail Fence Cipher
    - A transposition cipher that writes plaintext in a zigzag pattern across multiple "rails".
 2. Caesar (Shift) Cipher with Frequency Analysis
@@ -19,5 +19,6 @@ This application provides a simple and user-friendly interface for encrypting an
    - Supports key generation.
    - Allows key import/export from/to files.
 
-#License
+# License
+
 This project is for educational purposes only.
