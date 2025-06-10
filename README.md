@@ -19,6 +19,22 @@ This application provides a simple and user-friendly interface for encrypting an
    - Supports key generation.
    - Allows key import/export from/to files.
 
+
+
+# File Structure
+
+main.py - program launch
+src:
+   ciphers.py - algorithms for implementing ciphers
+data:
+   english_words.txt - dictionary
+   english_alphabet.txt
+   ukrainian_alphabet.txt
+test:
+   test_main.py - unit tests for the program
+README.md – зroject documentation
+
+
 # License
 
 This project is for educational purposes only.
